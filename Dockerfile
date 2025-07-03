@@ -29,7 +29,7 @@ COPY docker/Caddyfile /etc/caddy/
 COPY docker/entrypoint.sh /app/entrypoint.sh
 
 ENTRYPOINT ["/bin/bash", "/app/entrypoint.sh"]
-EXPOSE 80/tcp
+EXPOSE 88/tcp
 VOLUME /stdb
 VOLUME /etc/spacetimedb
 ENV MODULES=pogly
